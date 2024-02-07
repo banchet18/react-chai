@@ -1,31 +1,32 @@
-1) index.html is main file where all content is loaded.
-2) noscript tag -> if suppose in browser javascript is not available then noscript tag shows What you write eg.you need to enable javascript to run this app.
+1. index.html is main file where all content is loaded.
+2. noscript tag -> if suppose in browser javascript is not available then noscript tag shows What you write eg.you need to enable javascript to run this app.
 
-3) react-dom is important virtual dom it is used for web browsers 
+3. react-dom is important virtual dom it is used for web browsers
 
-4) jsx -> <App/> , <chetan/> => custom tag
+4. jsx -> <App/> , <chetan/> => custom tag
 
-5) react-script is used to connect index.html to index.js which is located in package.json file.
+5. react-script is used to connect index.html to index.js which is located in package.json file.
 
-6) vite do not use react-script its used script tag.
+6. vite do not use react-script its used script tag.
 
-7) to create component uppercase is must -> good practice.
+7. to create component uppercase is must -> good practice.
 
-8) by the component we can only return a single element. good practice is wrap all elements in single div or fragment.
-
+8. by the component we can only return a single element. good practice is wrap all elements in single div or fragment.
 
 ----------- video 4 ------------
 
-  04customReact file
+04customReact file
 
-  <App/> is function
+<App/> is function
 
-  injecting javascript in jsx
+injecting javascript in jsx
 
-  babel is important
+babel is important
 
-  -------- video 5 --------------
+-------- video 5 --------------
 
-  05counter file
+05counter file
 
-  react hook
+react hook
+
+we can give any default value in useState hook except function. eg false,null,{} etc.
