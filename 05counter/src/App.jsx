@@ -14,13 +14,17 @@ function App() {
     setCounter(counter + 1);
   };
 
+  const removeValue = () => {
+    setCounter(counter - 1);
+  };
+
   return (
     <>
       <h1>Chai aur code</h1>
       <h2>counter value: {counter}</h2>
       <button onClick={addValue}>Add value</button>
       <br />
-      <button>remove value</button>
+      <button onClick={removeValue}>remove value</button>
     </>
   );
 }
