@@ -2,3 +2,5 @@
 2) noscript tag -> if suppose in browser javascript is not available then noscript tag shows What you write eg.you need to enable javascript to run this app.
 
 3) react-dom is important virtual dom it is used for web browsers 
+
+4) jsx -> <App/> , <chetan/> => custom tag
