@@ -32,3 +32,6 @@ react hook
 we can give any default value in useState hook except function. eg 0,false,null,{} etc.
 
 two arrays in useState 1st is variable 2nd is function by which variable value can change in ui wherever it written.
+
+#assignment - in remove value it should not show lesser value than 0
+0 should be end point
