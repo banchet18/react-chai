@@ -1,30 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { createElement } from "react";
-// const reactElement = {
-//   type: "a",
-//   props: {
+// import { createElement } from "react";
+// // const reactElement = {
+// //   type: "a",
+// //   props: {
+// //     href: "https://google.com",
+// //     target: "_blank",
+// //   },
+// //   children: "Click me to visit google",
+// // };
+
+// const anotherElement = (
+//   <a href="https://google.com" target="blank">
+//     Visit google
+//   </a>
+// );
+
+// // babel do this
+// const reactElement = React.createElement(
+//   "a",
+//   {
 //     href: "https://google.com",
-//     target: "_blank",
+//     target: "blank",
 //   },
-//   children: "Click me to visit google",
-// };
+//   "Click me to visit google"
+// );
 
-const anotherElement = (
-  <a href="https://google.com" target="blank">
-    Visit google
-  </a>
-);
+// ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
-// babel do this
-const reactElement = React.createElement(
-  "a",
-  {
-    href: "https://google.com",
-    target: "blank",
-  },
-  "Click me to visit google"
-);
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// ----------------------------------------------------
