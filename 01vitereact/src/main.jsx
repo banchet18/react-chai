@@ -17,6 +17,7 @@ const anotherElement = (
   </a>
 );
 
+// babel do this
 const reactElement = React.createElement(
   "a",
   {
@@ -26,4 +27,4 @@ const reactElement = React.createElement(
   "Click me to visit google"
 );
 
-ReactDOM.createRoot(document.getElementById("root")).render(reactElement);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);

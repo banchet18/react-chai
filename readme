@@ -19,3 +19,5 @@
   04customReact file
 
   <App/> is function
+
+  injecting javascript in jsx
