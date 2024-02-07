@@ -6,3 +6,5 @@
 4) jsx -> <App/> , <chetan/> => custom tag
 
 5) react-script is used to connect index.html to index.js which is located in package.json file.
+
+6) vite do not use react-script its used script tag.
