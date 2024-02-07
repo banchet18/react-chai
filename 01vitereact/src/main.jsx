@@ -31,4 +31,20 @@ import App from "./App.jsx";
 
 // ----------------------------------------------------
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// const reactElement = {
+//   type: "a",
+//   props: {
+//     href: "hello",
+//     target: "blank",
+//   },
+//   children: "hello my name",
+// };
+const reactElement = React.createElement(
+  "a",
+  {
+    href: "hello",
+    target: "blank",
+  },
+  "hello my name"
+);
+ReactDOM.createRoot(document.getElementById("root")).render(reactElement);
