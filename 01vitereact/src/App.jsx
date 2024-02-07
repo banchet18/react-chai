@@ -1,4 +1,4 @@
-// import Chai from "./Chai";
+import Chai from "./Chai";
 
 function App() {
   const username = "chai aur code";
@@ -6,7 +6,7 @@ function App() {
     <>
       {/* {username} is expression evaluated expression*/}
       <h1>hello {username}</h1>
-      {/* <Chai /> */}
+      <Chai />
     </>
   );
 }
