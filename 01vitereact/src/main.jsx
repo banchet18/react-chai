@@ -39,12 +39,9 @@ import App from "./App.jsx";
 //   },
 //   children: "hello my name",
 // };
-const reactElement = React.createElement(
-  "a",
-  {
-    href: "hello",
-    target: "blank",
-  },
-  "hello my name"
+const reactElement1 = (
+  <a href="sad" target="blank">
+    asdasdf
+  </a>
 );
-ReactDOM.createRoot(document.getElementById("root")).render(reactElement);
+ReactDOM.createRoot(document.getElementById("root")).render(reactElement1);
