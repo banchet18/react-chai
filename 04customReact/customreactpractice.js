@@ -12,10 +12,19 @@ const reactElement = {
 customRender(reactElement, mainContainer);
 
 function customRender(reactElement, mainContainer) {
+  /*
   const domElement = document.createElement(reactElement.type);
   domElement.innerHTML = reactElement.children;
   domElement.setAttribute("href", reactElement.props.href);
   domElement.setAttribute("target", reactElement.props.target);
 
   mainContainer.append(domElement);
+  */
+  const domElement = document.createElement(reactElement.type);
+  domElement.innerHTML = reactElement.children;
+  for (const prop in reactElement.props) {
+    if(prop === 'children') mainContainer
+    domElement.setAttribute(prop,)
+    }
+  }
 }
