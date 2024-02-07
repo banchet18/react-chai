@@ -7,7 +7,7 @@ function App() {
   let counter = 5;
 
   const addValue = () => {
-    console.log("clicked", Math.random());
+    console.log("clicked", counter);
     counter = counter + 1;
   };
 
