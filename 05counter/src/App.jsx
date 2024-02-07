@@ -4,11 +4,17 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
+  let counter = 5;
+
+  const addValue = () => {
+    console.log("value added", Math.random());
+  };
+
   return (
     <>
       <h1>Chai aur code</h1>
-      <h2>counter:5</h2>
-      <button>Add value</button>
+      <h2>counter value: {counter}</h2>
+      <button onClick={addValue}>Add value</button>
       <br />
       <button>remove value</button>
     </>
