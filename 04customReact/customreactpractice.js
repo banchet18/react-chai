@@ -23,8 +23,8 @@ function customRender(reactElement, mainContainer) {
   const domElement = document.createElement(reactElement.type);
   domElement.innerHTML = reactElement.children;
   for (const prop in reactElement.props) {
-    if(prop === 'children') mainContainer
-    domElement.setAttribute(prop,)
-    }
+    if (prop === "children") mainContainer;
+    domElement.setAttribute(prop, reactElement.props[prop]);
   }
+  mainContainer.append(domElement);
 }
