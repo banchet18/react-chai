@@ -1,1 +1,2 @@
-1 index.html is main file where all content is loaded.
+1) index.html is main file where all content is loaded.
+2) noscript tag -> if suppose in browser javascript is not available then noscript tag shows What you write eg.you need to enable javascript to run this app.
