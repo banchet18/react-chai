@@ -30,3 +30,5 @@ babel is important
 react hook
 
 we can give any default value in useState hook except function. eg false,null,{} etc.
+
+two arrays in useState 1st is variable like 2nd is function by which variable value can change in ui wherever it written.

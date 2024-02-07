@@ -4,9 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  useState();
+  const [counter, setCounter] = useState(15);
 
-  let counter = 5;
+  //let counter = 5;
 
   const addValue = () => {
     console.log("clicked", counter);
