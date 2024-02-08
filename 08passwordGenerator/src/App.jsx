@@ -11,7 +11,7 @@ function App() {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     if (numberAllowed) str += "0123456789";
-    if (numberAllowed) str += "0123456789";
+    if (charAllowed) str += "!@#$%Z^&*(){}[]~`+-";
   }, [length, numberAllowed, charAllowed, setpassword]);
   return (
     <>
