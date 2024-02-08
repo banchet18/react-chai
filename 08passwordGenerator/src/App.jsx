@@ -34,6 +34,14 @@ function App() {
             copy
           </button>
         </div>
+        <div className="flex items-center gap-x-1">
+          <input
+            type="checkbox"
+            defaultChecked={charAllowed}
+            id="characterInput"
+          />
+          <label htmlFor="characterInput">Characters</label>
+        </div>
       </div>
     </>
   );
