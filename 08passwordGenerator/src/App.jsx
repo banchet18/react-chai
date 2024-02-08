@@ -69,8 +69,8 @@ function App() {
               type="checkbox"
               defaultChecked={numberAllowed}
               id="numberInput"
-              onChange={(prev) => {
-                !prev;
+              onChange={() => {
+                setNumberAllowed((prev) => !prev);
               }}
             />
             <label htmlFor="numberInput">Numbers</label>
@@ -80,8 +80,8 @@ function App() {
               type="checkbox"
               defaultChecked={charAllowed}
               id="characterInput"
-              onChange={(prev) => {
-                !prev;
+              onChange={() => {
+                setCharAllowed((prev) => !prev);
               }}
             />
             <label htmlFor="characterInput">Characters</label>
