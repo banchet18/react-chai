@@ -26,7 +26,9 @@ function App() {
     passwordGenerator();
   }, [length, numberAllowed, charAllowed, passwordGenerator]);
 
-  const copyPasswordToClipboard = useCallback(() => {}, [password]);
+  const copyPasswordToClipboard = useCallback(() => {
+    window.navigator.clipboard.writeText(password);
+  }, [password]);
 
   return (
     <>
