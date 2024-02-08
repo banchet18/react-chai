@@ -11,8 +11,13 @@ function App() {
   return (
     <>
       <h1>tailwind</h1>
-      <Card username="chaiorcode" someObj={myObj} someArr={newArr} />
-      <Card />
+      <Card
+        username="chaiorcode"
+        someObj={myObj}
+        someArr={newArr}
+        btnText="click me"
+      />
+      <Card username="hitesh" btnText="visit me" />
     </>
   );
 }
