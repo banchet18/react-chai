@@ -5,6 +5,8 @@ function App() {
   const [length, setLength] = useState(8);
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [charAllowed, setCharAllowed] = useState(false);
+  const [input, setInput] = useState();
+
   return (
     <>
       <h1 className=" text-4xl text-center text-white">password generator</h1>
