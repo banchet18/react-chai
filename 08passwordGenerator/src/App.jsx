@@ -103,28 +103,28 @@ const App = () => {
   const [length, setLength] = useState(8);
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [charAllowed, setCharAllowed] = useState(false);
-  const [password, setPassword] = useState("");
+  const [password, setpassword] = useState("");
 
   const passwordGenerator = useCallback(() => {
     let pass = "";
-    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    let str = "ABCDabcd";
     if (numberAllowed) str += "0123456789";
-    if (charAllowed) str += "/*-+~`!@#$%^&(){}[]?|.,";
+    if (charAllowed) str += "!@#$%^";
 
-    for (let i = 1; i < length; i++) {
+    for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length + 1);
       pass += str.charAt(char);
     }
-    setPassword(pass);
-  }, [length, numberAllowed, charAllowed, setPassword]);
+    setpassword(pass);
+  }, [length, numberAllowed, charAllowed, setpassword]);
 
   useEffect(() => {
     passwordGenerator();
-  }, [length, numberAllowed, charAllowed, setPassword]);
+  }, [length, numberAllowed, charAllowed, setpassword]);
 
   const passwordRef = useRef(null);
 
-  const copyPasswordTOClipboard = useCallback(() => {
+  const copToClipboard = useCallback(() => {
     passwordRef.current?.select();
     window.navigator.clipboard.writeText(password);
   }, [password]);
@@ -136,11 +136,10 @@ const App = () => {
           type="text"
           className=" text-black"
           placeholder="password"
-          readOnly
           value={password}
           ref={passwordRef}
         />
-        <button className=" bg-red-500" onClick={copyPasswordTOClipboard}>
+        <button className=" bg-red-500" onClick={copToClipboard}>
           copy
         </button>
       </div>
@@ -149,7 +148,7 @@ const App = () => {
           <input
             type="range"
             min={0}
-            max={50}
+            max={20}
             value={length}
             onChange={(e) => {
               setLength(e.target.value);
@@ -169,7 +168,7 @@ const App = () => {
         <div>
           <input
             type="checkbox"
-            onChange={() => {
+            onChange={(e) => {
               setCharAllowed((prev) => !prev);
             }}
           />
