@@ -53,6 +53,9 @@ function App() {
               type="checkbox"
               defaultChecked={numberAllowed}
               id="numberInput"
+              onChange={(prev) => {
+                !prev;
+              }}
             />
             <label htmlFor="numberInput">Numbers</label>
           </div>
@@ -61,6 +64,9 @@ function App() {
               type="checkbox"
               defaultChecked={charAllowed}
               id="characterInput"
+              onChange={(prev) => {
+                !prev;
+              }}
             />
             <label htmlFor="characterInput">Characters</label>
           </div>
