@@ -5,11 +5,13 @@ let myObj = {
   age: 21,
 };
 
+let newArr = [1, 2, 3, 4, 5];
+
 function App() {
   return (
     <>
       <h1>tailwind</h1>
-      <Card channel="chaiorcode" someObj={myObj} />
+      <Card username="chaiorcode" someObj={myObj} someArr={newArr} />
       <Card />
     </>
   );
