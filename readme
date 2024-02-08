@@ -67,3 +67,5 @@ setCounter((prepCount) => prepCount + 1);
 15 value to direct 19 value through call back function
 
 ------------------------------ video 9 -------------------------------
+onClick wants function not function return so,
+onClick(()=>{}) good practice
