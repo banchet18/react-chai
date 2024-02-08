@@ -17,7 +17,7 @@ function App() {
         someArr={newArr}
         btnText="click me"
       />
-      <Card username="hitesh" btnText="visit me" />
+      <Card username="hitesh" />
     </>
   );
 }
