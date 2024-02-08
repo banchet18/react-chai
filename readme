@@ -57,3 +57,13 @@ arr and obj props
 destructuring
 
 ---------------------------- video 8 ---------------------------
+#interview question
+
+setCounter((prepCount) => prepCount + 1);
+setCounter((prepCount) => prepCount + 1);
+setCounter((prepCount) => prepCount + 1);
+setCounter((prepCount) => prepCount + 1);
+
+15 value to direct 19 value through call back function
+
+------------------------------ video 9 -------------------------------
